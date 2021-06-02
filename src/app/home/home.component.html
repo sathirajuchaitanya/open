@@ -1,0 +1,153 @@
+<div class="w-100">
+    <div class="row">
+        <div class="col-6">
+            <div class="blob-img">
+                <div class="section1-text">
+                    We Make it Super simple
+                </div>
+                <div class="collect-img">
+    
+                </div>
+            </div>
+        </div>
+        <div class="col-6 bg-circle">
+            <div class="row ">
+                <div class="col-8">
+                    <div class="input-card">
+                        <div class="card-head">Eligibility calculator</div>
+                        <div class="form-input" >
+                        <form>
+                            <div class="form-group">
+                                <label for="income">Monthly Income</label>
+                                <div class="price-value">{{emiCalculator.monthlyIncome | currency:'INR' }}</div>
+                                <input id="monthlyIncome" class="range-slider form-control"  min="100000" max="300000" type="range"  [value]="emiCalculator.monthlyIncome"
+                                    (input)="changeBackGroundColor('monthlyIncome')" />
+                            </div>
+                            <div class="form-group">
+                                <label for="income">Monthly expenses</label>
+                                <div  class="price-value">{{emiCalculator.monthlyExpenses | currency:'INR'}}</div>
+                                    <input id="income" class="range-slider form-control"  min="0" max="100000" type="range"  [value]="emiCalculator.monthlyExpenses"
+                                    (input)="changeBackGroundColor('income')" />
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Repayment Tenure</label>
+                                <select id="country" name="country">
+                                    <option value="6Months">6 Months</option>
+                                    <option value="9Months">9 Months</option>
+                                    <option value="12Months">12 Months</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <div class="col-8"> <label>Do you have any existing loans</label></div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <input class="switch" id="switch1" type="checkbox" />
+                                        <label for="switch1" class="switch-label">
+                                        </label>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                           
+                            <div class="form-group">
+                                <label>Emi of existing loan(optional)</label>
+                                <input type="number" min="0" max="200000"  name="emiExistingLoan" placeholder="{{15000 | currency:'INR' :'symbol':'5.0'}}" >
+                            </div>
+                          </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="price-card">
+                        <div class="body">
+                            <label>Loan Amount</label>
+                            <div class="price">{{emiCalculator.eligibiltyLoan.loanAmount| currency:'INR' :'symbol':'3.0'}}</div>
+                            <label>your Emi Will be</label>
+                            <div class="price">{{emiCalculator.eligibiltyLoan.montlyEmi | currency:'INR':'symbol':'3.0'}}</div>
+                            <button class="btn-white">Get Money</button>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <div class="row " >
+        <div class="col-8"></div>
+        <div class="col-4 dots"></div>
+    </div>
+<div class="bg-wave">
+    <div class="row">
+        <div class="col-8">
+            <div class="row">
+                <div class="col-6">
+                    <div class="card">
+                        <img src="../../assets/images/instant-pay.png">
+                        <div class="card-header">
+                            Quick cash disbursement
+                        </div>
+                        <div class="card-body">
+                            Get terms loans that your business needs within 72 hrs
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="../../assets/images/low-intrest-rate.png">
+                        <div class="card-header">
+                            Low-intrest rate
+                        </div>
+                        <div class="card-body">
+                            Achieve your financial goals with an amazing interest rate starting at 13% per annum
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="../../assets/images/secure-payment.png">
+                        <div class="card-header">
+                            Zero Paperwork
+                        </div>
+                        <div class="card-body">
+                            Get started instantly by submitting only your basic details & bank statements
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-6 top-alignment">
+                    <div class="card">
+                        <img src="../../assets/images/freelancer_feature_icon_6@1.5x.png">
+                        <div class="card-header">
+                            Ace your business finances
+                        </div>
+                        <div class="card-body">
+                            Manage banking, accounting & everything in between, on one platform
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="../../assets/images/covid-symbol.png">
+                        <div class="card-header">
+                            Loans to fight COVID-19
+                        </div>
+                        <div class="card-body">
+                            Zero EMI for first 3 months on Back-to-Business loans of upto 1 lakh
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class=" row section-container">
+                Boost Your Bussiness with Open
+                <div class ="row">
+                    Get your hands on a term loan that’s crafted for your business
+                </div>
+                <button class ="btn-lg btn-primary-outline">
+                    Get an Open Account
+                </button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+</div>
