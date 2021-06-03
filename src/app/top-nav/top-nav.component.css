@@ -3,7 +3,7 @@
     background-color:var(--white);
     position: sticky;
     top:0px;
-    z-index: 3;
+    z-index: 10;
     
   }
   
